@@ -1,119 +1,90 @@
+import React from "react";
+import { Card } from "@/components/Card";
+import { Section } from "@/components/Section";
+import { SimpleLayout } from "@/components/SimpleLayout";
 import Head from 'next/head'
 
-import { Card } from '@/components/Card'
-import { Section } from '@/components/Section'
-import { SimpleLayout } from '@/components/SimpleLayout'
-
-function ToolsSection({ children, ...props }) {
+function ToolsSection({ children, title, ...props }) {
   return (
-    <Section {...props}>
-      <ul role="list" className="space-y-16">
+    <Section title={title} {...props}>
+      <ul role='list' className='space-y-8'>
         {children}
       </ul>
     </Section>
-  )
+  );
 }
 
 function Tool({ title, href, children }) {
   return (
-    <Card as="li">
-      <Card.Title as="h3" href={href}>
+    <Card as='li'>
+      <Card.Title as='h3' href={href}>
         {title}
       </Card.Title>
       <Card.Description>{children}</Card.Description>
     </Card>
-  )
+  );
 }
 
 export default function Uses() {
   return (
-    <>
-      <Head>
-        <title>Uses - Spencer Sharp</title>
+  <>
+    <Head>
+        <title>Uses - Shardul Vanage</title>
         <meta
           name="description"
-          content="Software I use, gadgets I love, and other things I recommend."
+          content="software I use, gadgets I love, and other things I recommend."
         />
       </Head>
-      <SimpleLayout
-        title="Software I use, gadgets I love, and other things I recommend."
-        intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
-      >
-        <div className="space-y-20">
-          <ToolsSection title="Workstation">
-            <Tool title="16” MacBook Pro, M1 Max, 64GB RAM (2021)">
-              I was using an Intel-based 16” MacBook Pro prior to this and the
-              difference is night and day. I’ve never heard the fans turn on a
-              single time, even under the incredibly heavy loads I put it
-              through with our various launch simulations.
-            </Tool>
-            <Tool title="Apple Pro Display XDR (Standard Glass)">
-              The only display on the market if you want something HiDPI and
-              bigger than 27”. When you’re working at planetary scale, every
-              pixel you can get counts.
-            </Tool>
-            <Tool title="IBM Model M SSK Industrial Keyboard">
-              They don’t make keyboards the way they used to. I buy these any
-              time I see them go up for sale and keep them in storage in case I
-              need parts or need to retire my main.
-            </Tool>
-            <Tool title="Apple Magic Trackpad">
-              Something about all the gestures makes me feel like a wizard with
-              special powers. I really like feeling like a wizard with special
-              powers.
-            </Tool>
-            <Tool title="Herman Miller Aeron Chair">
-              If I’m going to slouch in the worst ergonomic position imaginable
-              all day, I might as well do it in an expensive chair.
-            </Tool>
-          </ToolsSection>
-          <ToolsSection title="Development tools">
-            <Tool title="Sublime Text 4">
-              I don’t care if it’s missing all of the fancy IDE features
-              everyone else relies on, Sublime Text is still the best text
-              editor ever made.
-            </Tool>
-            <Tool title="iTerm2">
-              I’m honestly not even sure what features I get with this that
-              aren’t just part of the macOS Terminal but it’s what I use.
-            </Tool>
-            <Tool title="TablePlus">
-              Great software for working with databases. Has saved me from
-              building about a thousand admin interfaces for my various projects
-              over the years.
-            </Tool>
-          </ToolsSection>
-          <ToolsSection title="Design">
-            <Tool title="Figma">
-              We started using Figma as just a design tool but now it’s become
-              our virtual whiteboard for the entire company. Never would have
-              expected the collaboration features to be the real hook.
-            </Tool>
-          </ToolsSection>
-          <ToolsSection title="Productivity">
-            <Tool title="Alfred">
-              It’s not the newest kid on the block but it’s still the fastest.
-              The Sublime Text of the application launcher world.
-            </Tool>
-            <Tool title="Reflect">
-              Using a daily notes system instead of trying to keep things
-              organized by topics has been super powerful for me. And with
-              Reflect, it’s still easy for me to keep all of that stuff
-              discoverable by topic even though all of my writing happens in the
-              daily note.
-            </Tool>
-            <Tool title="SavvyCal">
-              Great tool for scheduling meetings while protecting my calendar
-              and making sure I still have lots of time for deep work during the
-              week.
-            </Tool>
-            <Tool title="Focus">
-              Simple tool for blocking distracting websites when I need to just
-              do the work and get some momentum going.
-            </Tool>
-          </ToolsSection>
-        </div>
-      </SimpleLayout>
-    </>
-  )
+    <SimpleLayout
+      title='Software I use, gadgets I love, and other things I recommend.'
+      intro='I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff.'
+    >
+      
+      <div className='space-y-20'>
+        <ToolsSection title='Workstation'>
+          <Tool title=' MacBook Air, M1, 8 GB RAM (2020) / Mac Mini M1'>
+            I was using an Low-config PC prior to this and the
+            difference is night and day. I’ve never heard the fans turn on a
+            single time, even under the incredibly heavy loads I put it through
+            with our various launch simulations.
+          </Tool>
+          <Tool title='Custom build PC (i5|11f-Gen,RTX-2060S,16GB RAM )'>
+            While coding, build, and conquer in one fell swoop! Beyond stellar gaming,
+             a custom PC fuels your coding sprints. Melt away mental fatigue with exhilarating gameplay, 
+             then return to code with a sharper focus and problem-solving edge honed by strategic challenges.
+             It's the ultimate refresh and productivity booster, all in one machine.
+          </Tool>
+          
+        </ToolsSection>
+        <ToolsSection title='Development tools'>
+          <Tool title='Microsoft Visual Studio Code'>
+            I don’t care if it’s missing all of the fancy IDE features everyone
+            else relies on, Sublime Text is still the best text editor ever
+            made.
+          </Tool>
+          
+          <Tool title='GitHub'>
+            GitHub is where over 83 million developers shape the future of
+            software, together. Contributed to the open source community,
+            managing my Git repositories.
+          </Tool>
+          <Tool title='REMIX - Ethereum IDE'>
+            REMIX throws open the doors with an effortless entry. No more fiddling with installs, just hop in your browser and start crafting smart contracts right away
+             The intuitive interface and rich documentation guide you every step of the way.
+          </Tool>
+        </ToolsSection>
+        <ToolsSection title='Productivity'>
+          <Tool title='Notion'>
+            Notion is a minimal project management and note-taking software
+            platform. Writing, planing &amp; getting organized in one place.
+          </Tool>
+          <Tool title='Todoist'>
+            An award-winning app used by millions of people to stay organized
+            and get more done. Helps me to organize tasks, lists and reminders
+            and also syncs seamlessly across all my devices.
+          </Tool>
+        </ToolsSection>
+      </div>
+    </SimpleLayout></>
+  );
 }

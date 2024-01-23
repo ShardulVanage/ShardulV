@@ -11,40 +11,35 @@ import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Genius - AI SaaS Platform',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
+      'AI SaaS Platform with five AI tools. Powered by the Next.js 13 App Router, platform will not only be efficient but also user-centric',
+    link: { href: 'https://github.com/ShardulVanage/Genius', label: 'github.com' },
     logo: logoPlanetaria,
   },
   {
-    name: 'Animaginary',
+    name: 'AI-Powered-3D-Tshirt-Designing-Website',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
+      'Developed a 3D T-Shirt Design Website using Three.js and React 3-Fiber for personalized t-shirt customization. Real-time color, logo, and AI-generated texture features. Strong focus on user experience, responsive design,. ',
+    link: { href: 'https://ai-powered-3-d-website-hazel.vercel.app/', label: '3d-Tshirt-Designer.com' },
     logo: logoAnimaginary,
   },
   {
-    name: 'HelioStream',
+    name: 'Decentragram',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
+      'This is a decentralised version of Instagram that was created with the help of the web3.js package and solidity. It has some unique features like tipping for posts and posting to the blockchain.',
+    link: { href: 'https://github.com/ShardulVanage/decentragranm', label: 'github.com' },
     logo: logoHelioStream,
   },
   {
-    name: 'cosmOS',
+    name: 'Decentralize File System',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
+      'In the decentralised file system, which we are utilising Pinata IPFS for, anyone can save the image, and a smart contract will preserve the images URL and you can access or share it from a website.',
+    link: { href: 'https://github.com/ShardulVanage/Decentralize-File-System', label: 'github.com' },
     logo: logoOpenShuttle,
   },
+  
+
 ]
 
 function LinkIcon(props) {
@@ -62,7 +57,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Spencer Sharp</title>
+        <title>Projects - Shardul Vanage</title>
         <meta
           name="description"
           content="Things I’ve made trying to put my dent in the universe."
