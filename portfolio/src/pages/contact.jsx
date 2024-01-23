@@ -47,12 +47,12 @@ export default function Speaking() {
         <title>Contact - Shardul Vanage</title>
         <meta
           name="Contact"
-          content="I'm always happy to answer your questions"
+          content="Im always happy to answer your questions"
         />
       </Head>
       <SimpleLayout
         title="Curious? Say Hello!"
-        intro="I'm always happy to answer your questions."
+        intro="Im always happy to answer your questions."
       >
        <section class="body-font relative text-gray-400 ">
 
@@ -61,7 +61,7 @@ export default function Speaking() {
     <div class="mb-12 flex w-full flex-col text-center">
 
       <p class="mx-auto text-base leading-relaxed lg:w-2/3 text-zinc-500 dark:text-zinc-400">Feel free to reach out to us! Whether you have a question,
-        feedback, or a collaboration proposal, we'd love to hear from you.
+        feedback, or a collaboration proposal, wed love to hear from you.
       </p>
     </div>
 

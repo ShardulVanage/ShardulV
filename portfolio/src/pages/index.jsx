@@ -233,7 +233,7 @@ export default function Home({ articles }) {
         </title>
         <meta
           name="home"
-          content=" I'm Shardul Vanage, a dedicated individual driven by a passion for constructing remarkable applications that positively impact the lives of those in my community.
+          content=" Im Shardul Vanage, a dedicated individual driven by a passion for constructing remarkable applications that positively impact the lives of those in my community.
  My enthusiasm for continuous learning and personal growth fuels my journey in software development, "
         />
       </Head>
@@ -244,7 +244,7 @@ export default function Home({ articles }) {
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             
-Hello, I'm Shardul Vanage, a dedicated individual driven by a passion for constructing remarkable applications that positively impact the lives of those in my community.
+Hello, Im Shardul Vanage, a dedicated individual driven by a passion for constructing remarkable applications that positively impact the lives of those in my community.
  My enthusiasm for continuous learning and personal growth fuels my journey in software development, 
 where I leverage my expertise to craft innovative and user-centric applications and websites.
           </p>

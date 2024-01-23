@@ -16,7 +16,7 @@ export function WorkExp() {
                      
                           <ul className="w-full list-inside list-disc text-zinc-400">
                             <li>
-Developed and maintained the company's website for the
+Developed and maintained the companys website for the
 course-selling platform. 
                               </li>
                                <li>
