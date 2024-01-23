@@ -37,14 +37,14 @@ export default function Uses() {
       </Head>
     <SimpleLayout
       title='Software I use, gadgets I love, and other things I recommend.'
-      intro='I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff.'
+      intro='I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking Im being productive when Im really just procrastinating. Here’s a big list of all of my favorite stuff.'
     >
       
       <div className='space-y-20'>
         <ToolsSection title='Workstation'>
           <Tool title=' MacBook Air, M1, 8 GB RAM (2020) / Mac Mini M1'>
             I was using an Low-config PC prior to this and the
-            difference is night and day. I’ve never heard the fans turn on a
+            difference is night and day. Ive never heard the fans turn on a
             single time, even under the incredibly heavy loads I put it through
             with our various launch simulations.
           </Tool>
@@ -52,13 +52,13 @@ export default function Uses() {
             While coding, build, and conquer in one fell swoop! Beyond stellar gaming,
              a custom PC fuels your coding sprints. Melt away mental fatigue with exhilarating gameplay, 
              then return to code with a sharper focus and problem-solving edge honed by strategic challenges.
-             It's the ultimate refresh and productivity booster, all in one machine.
+             Its the ultimate refresh and productivity booster, all in one machine.
           </Tool>
           
         </ToolsSection>
         <ToolsSection title='Development tools'>
           <Tool title='Microsoft Visual Studio Code'>
-            I don’t care if it’s missing all of the fancy IDE features everyone
+            I dont care if its missing all of the fancy IDE features everyone
             else relies on, Sublime Text is still the best text editor ever
             made.
           </Tool>
